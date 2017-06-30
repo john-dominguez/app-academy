@@ -1,12 +1,13 @@
-# primes.rb
 require 'byebug'
 
 def prime?(num)
-  (1..num).each do |idx|
+  (2...num).each do |idx|
     if num % idx == 0
       return false
     end
   end
+
+  true
 end
 
 def primes(num_primes)
