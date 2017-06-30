@@ -19,5 +19,3 @@ end
 if __FILE__ == $PROGRAM_NAME
   puts primes(100)
 end
-
-# tetsing
