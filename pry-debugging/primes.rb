@@ -1,4 +1,5 @@
 # primes.rb
+require 'byebug'
 
 def prime?(num)
   (1..num).each do |idx|
