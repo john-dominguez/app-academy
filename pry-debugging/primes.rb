@@ -2,9 +2,7 @@ require 'byebug'
 
 def prime?(num)
   (2...num).each do |idx|
-    if num % idx == 0
-      return false
-    end
+    return false if num % idx == 0
   end
 
   true
@@ -13,11 +11,17 @@ end
 def primes(num_primes)
   ps = []
   num = 1
-  while ps.count < num_primes
-    primes << num if prime?(num)
-  end
+  num_primes << num if prime?(num) while ps.count < num_primes
 end
 
-if __FILE__ == $PROGRAM_NAME
-  puts primes(100)
+# puts primes(100) if $PROGRAM_NAME == __FILE__
+
+def testint()
+  counter = 0
+
+  while counter < 10
+    puts "This is iteration number #{counter}!"
+    counter += 1 # counter += 1 is the syntactic-sugar equivalent
+  end
 end
+testint

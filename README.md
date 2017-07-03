@@ -6,3 +6,4 @@ ORDER
 2. pry-debugging
 3. methods-exercises
 4. data-structure-exercises
+5. Control-Flow Exercises
